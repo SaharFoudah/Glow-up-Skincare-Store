@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Shop - Product List</title>
+    <!-- Google Fonts (Poppins & Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Skin<span>care</span> Shop</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="product-list.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="../pages/about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="../pages/cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== PRODUCT LIST HEADER ===== -->
+        <section class="product-list-header">
+            <div class="container">
+                <h1>All Products</h1>
+                <p>Browse our complete collection of skincare products</p>
+            </div>
+        </section>
+
+        <!-- ===== FILTER & PRODUCT GRID ===== -->
+        <section class="section">
+            <div class="container">
+                <!-- Filter/Search Bar -->
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="category-filter" class="filter-label">Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="moisturizer">Moisturizer</option>
+                            <option value="serum">Serum</option>
+                            <option value="cleanser">Cleanser</option>
+                            <option value="mask">Mask</option>
+                        </select>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Search for a product...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="products-grid">
+                    <!-- Product cards will be loaded here dynamically or statically -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.8.jpg" alt="Product 1">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Moisturizer</span>
+                            <h3 class="product-title">Day Moisturizing Cream</h3>
+                            <p class="product-price">150 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.2.jpg" alt="Product 2">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Serum</span>
+                            <h3 class="product-title">Vitamin C Serum</h3>
+                            <p class="product-price">220 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.3.jpg" alt="Product 3">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Cleanser</span>
+                            <h3 class="product-title">Gentle Face Wash</h3>
+                            <p class="product-price">95 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.4.jpg" alt="Product 4">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Mask</span>
+                            <h3 class="product-title">Purifying Clay Mask</h3>
+                            <p class="product-price">130 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.9.jpg" alt="Product 5">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Moisturizer</span>
+                            <h3 class="product-title">Nourishing Night Cream</h3>
+                            <p class="product-price">180 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/p.6.jpg" alt="Product 6">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Serum</span>
+                            <h3 class="product-title">Hyaluronic Acid Serum</h3>
+                            <p class="product-price">250 SAR</p>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart-btn">Add to Cart</button>
+                                <a href="product-details.html" class="btn btn-secondary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more product cards as needed -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="../index.html" class="footer-logo">Skin<span>care</span> Shop</a>
+                <p>Specializing in providing the best natural and organic skincare products for healthy, radiant skin.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="../index.html">Home</a></li>
+                    <li class="footer-link"><a href="product-list.html">Products</a></li>
+                    <li class="footer-link"><a href="../pages/about.html">About Us</a></li>
+                    <li class="footer-link"><a href="../pages/contact.html">Contact Us</a></li>
+                    <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-link"><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">My Account</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Login</a></li>
+                    <li class="footer-link"><a href="../pages/cart.html">Shopping Cart</a></li>
+                    <li class="footer-link"><a href="#">Wishlist</a></li>
+                    <li class="footer-link"><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Contact Us</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><span><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</span></li>
+                    <li class="footer-link"><span><i class="fas fa-phone"></i> +966 11 123 4567</span></li>
+                    <li class="footer-link"><span><i class="fas fa-envelope"></i> info@skincareshop.sa</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Skincare Shop. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
